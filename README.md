@@ -9,12 +9,13 @@
 ### Association
 - has_many :groups
 
-## groupsテーベル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
 |image|text||
 |users_id|integer|null: false,foreign_key: true|
+
 ### Association
 - has_many :users
 

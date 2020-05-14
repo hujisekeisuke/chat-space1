@@ -54,3 +54,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "actionview", ">= 5.0.7.2"
 gem 'haml-rails'
 gem 'font-awesome-sass'
+gem 'devise'

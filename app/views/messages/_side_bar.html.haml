@@ -1,15 +1,15 @@
 .side_bar
   .side_bar__nickname
-    .side_bar__nickname__items
+    .side_bar__nickname__items 
       .side_bar__nickname__items__name
-        user
+        = current_user.name
       .side_bar__nickname__items__menu
         .side_bar__nickname__items__menu__group
-          = link_to "#" do
-            = icon('far', 'edit')
+          = link_to do
+            = icon('fas', 'pen-square', class: 'icon')
         .side_bar__nickname__items__menu__user
-          = link_to "#" do
-            = icon('fas', 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .side_bar__group
     = link_to "#",class:"side_bar__group__list" do
       .side_bar__group__list__name

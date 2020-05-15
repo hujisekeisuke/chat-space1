@@ -34,14 +34,16 @@
       }
     }
   }
-  &__group{
+  &__groups-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
-    &__list{
+    &__group{
       margin-bottom: 40px;
-      color: white;
-      text-decoration: none;
+      a{
+        color: white;
+        text-decoration: none;
+      }
       &__name{
         font-size: 15px;
         margin-bottom: 5px;

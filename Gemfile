@@ -55,3 +55,4 @@ gem "actionview", ">= 5.0.7.2"
 gem 'haml-rails'
 gem 'font-awesome-sass'
 gem 'devise'
+gem 'pry-rails'

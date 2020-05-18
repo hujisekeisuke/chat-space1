@@ -11,20 +11,14 @@
       = link_to "#" do
         Edit
   .main_chat__messages
-    .main_chat__messages__tweet
-      .main_chat__messages__tweet__user
-        sa
-        .main_chat__messages__tweet__user__time
-          2019/01/01
-      .main_chat__messages__tweet__text
-        おはよう
+    -# .main_chat__messages__tweet
+    -#   .main_chat__messages__tweet__messages
+    = render @messages
   .form
     = form_for [@group,@message] do |f|
-      = f.text_field :content,class: 'form__new_message', placeholder: 'type a message'
-        .form__input-box
-          = f.label :image, class: 'form__input-box__text' do
-            = icon('fas', 'image', class: 'icon')
-            = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
-
- 
+      .form__mask
+        = f.text_field :content, class: 'form__mask__message', placeholder: 'type a message'
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image')
+          = f.file_field :image, class: 'form__mask__image__hidden'
+      = f.submit 'Send', class: 'form__submit'

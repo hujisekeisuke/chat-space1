@@ -1,4 +1,4 @@
-.message
+.message{data: {message: {id: message.id}}}
   .message__tweet
     .message__tweet__user
       = message.user.name
@@ -9,3 +9,4 @@
       %p.message__text__content
         = message.content
     = image_tag message.image.url, class: 'message__text__image' if message.image.present?
+ 
